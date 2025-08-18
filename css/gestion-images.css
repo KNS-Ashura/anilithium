@@ -1,12 +1,13 @@
 
 .divided {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .text-group {
-  flex: 0 0 70%;
+  flex: 70 0 0%;
 }
 
 .divided img {
@@ -15,6 +16,6 @@
   max-width: 100%;
   height: auto;
   border-radius: 10%;
-  margin: 0.35em;
+  margin: 0.50em;
   position: relative;
 }
