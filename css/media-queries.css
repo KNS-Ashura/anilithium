@@ -67,3 +67,46 @@
     transform: none;      /* pas de décalage */
   }
 }
+
+/* Pour écrans de moins de 500px */
+@media screen and (max-width: 500px) {
+
+  body {
+    font-size: 14px; /* ajuste la taille globale si nécessaire */
+  }
+
+  .presentation-section h1 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+  }
+
+  .presentation-section h2 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+  }
+
+  .presentation-section p {
+    font-size: 0.95em;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+
+  .divided {
+    flex-direction: column;
+    gap: 15px; /* espace entre texte et image */
+  }
+
+  .image-block {
+    margin: 15px 0;
+    padding: 0.5em;
+  }
+
+  .image-block img {
+    max-width: 90%; /* réduit légèrement la taille des images */
+    height: auto;
+  }
+
+  .link-block {
+    margin-bottom: 10px; /* réduit les marges dans le header si nécessaire */
+  }
+}
