@@ -1,0 +1,20 @@
+
+.divided {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.text-group {
+  flex: 0 0 70%;
+}
+
+.divided img {
+  flex: 0 0 30%;
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10%;
+  margin: 0.35em;
+  position: relative;
+}

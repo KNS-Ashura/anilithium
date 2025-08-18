@@ -1,0 +1,41 @@
+.img-section-1 {
+  background-image: radial-gradient(circle at center center, rgba(183, 237, 84, 0.636), rgb(8, 8, 8));
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.presentation-section h1,
+h2 {
+  text-align: center;
+  font-size: 2.2em;
+  color: rgb(246, 155, 90);
+  margin-bottom: 20px;
+}
+
+.presentation-section p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: rgb(255, 228, 196);
+}
+
+.image-block {
+  text-align: center;
+  margin: 30px 0;
+  padding: 1em;
+}
+
+.image-block img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 136, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-block img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 182, 130, 0.6);
+}

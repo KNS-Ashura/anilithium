@@ -1,0 +1,245 @@
+/* gestion du style principale*/
+
+body {
+    background-image: radial-gradient(circle at center center, rgb(71, 71, 71), rgb(8, 8, 8));
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: black;
+    padding: 1em 2em 0em;
+    margin-bottom: 0;
+}
+
+header div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+header div a img {
+    width: 11rem;
+    height: 11rem;
+    border: 1px solid rgb(255, 182, 130);
+    border-radius: 3%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+header div:not(:first-child) a {
+    flex: 1;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 182, 130);
+    padding: 1em;
+    border: 1px solid rgb(255, 182, 130);
+    border-radius: 3%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    font-weight: 600;
+    max-width: 200px;
+}
+
+header div a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 136, 0, 0.8);
+    color: rgb(255, 182, 130);
+}
+
+header div a img:hover {
+    transform: scale(1.035);
+    box-shadow: 0 0 15px rgba(255, 136, 0, 0.8);
+    color: rgb(255, 182, 130);
+}
+
+.link-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    text-align: center;
+    margin-right: 5%;
+    flex: 1;
+    min-height: 100px;
+    justify-content: flex-start;
+    margin-top: 2.3em;
+}
+
+.link-block a {
+    width: 100%;
+}
+
+.sous-texte {
+    color: rgb(255, 182, 130);
+    font-size: 1.1em;
+    margin-top: 0.0em;
+    font-weight: 400;
+    line-height: 1.2em;
+    transform: translateY(-25%);
+}
+
+main {
+    color: rgb(255, 228, 196);
+    padding: 4em 2em;
+    max-width: 1200px;
+    margin: auto;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+main h1,
+main h2 {
+    color: rgb(255, 182, 130);
+    margin-bottom: 0.5em;
+}
+
+main section {
+    margin-bottom: 3em;
+    background-color: rgba(255, 182, 130, 0.05);
+    padding: 2em;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255, 136, 0, 0.2);
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: rgb(255, 182, 130);
+    text-align: center;
+    padding: 2em;
+    font-size: 1.3em;
+    border-top: 1px solid rgba(255, 136, 0, 0.3);
+    gap: 1em;
+}
+
+footer a {
+    display: inline-block;
+    margin: 0 1em;
+    color: rgb(255, 182, 130);
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 1.1em;
+}
+
+footer a:hover {
+    color: rgb(255, 215, 170);
+}
+
+footer a strong {
+    color: rgb(255, 215, 170);
+    /* plus clair */
+    font-weight: 700;
+    text-shadow: 0 0 3px rgba(255, 136, 0, 0.5);
+    /* léger glow */
+}
+
+/* style du carrousel contenat les images */
+
+.carrousel {
+  position: relative;
+  width: 40rem;       /* largeur fixe */
+  max-width: 100%;    /* responsive */
+  height: 30rem;      /* hauteur contrôlée */
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carrousel ul {
+  display: flex;
+  flex-direction: column; /* empile les slides */
+  transition: transform 0.6s ease-in-out;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.carrousel li {
+  list-style: none;
+  flex: 0 0 100%;   /* chaque slide prend 100% de la hauteur du carrousel */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carrousel img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;  /* garde les proportions */
+  max-height: 100%;     /* ne dépasse pas le carrousel */
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: solid rgb(255, 182, 130);
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.3em 0.6em;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+#prev { top: 10px; }
+#next { bottom: 10px; }
+
+.count {
+  text-align: center;
+  color: #fff;
+  margin-top: 0.5em;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+
+
+
+
+/*gestion du style de la rubique contacte*/
+
+.con-place {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.con-img {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.con-img a img {
+    border-radius: 1em;
+    width: 7em;
+    height: 7em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.con-img a img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 2px rgba(255, 136, 0, 0.8);
+    color: rgb(255, 182, 130);
+}
+
+.con-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(255, 182, 130);
+}
+
+.con-text a {
+    color: antiquewhite;
+}
