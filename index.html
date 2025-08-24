@@ -20,7 +20,7 @@
   <body>
     <header>
       <div>
-        <a href="../index.html">
+        <a href="#start">
           <img
             src="./assets/logo/logo-animation-lithium.png"
             alt="logo avec une guitare et deux personnages ainsi que l'inscription dorée animation lithium"
@@ -44,35 +44,48 @@
 
     <main>
       <section>
-        <h1>Présentation</h1>
-        <p>
-          Nous sommes professionnels de l'animation musicale et du spectacle,
-          disc-jockey & musiciens dont la vocation est avant tout de vous donner
-          le meilleur de nous même. La visite du site vous donnera une idée
-          assez précise de notre conception de l'animation, qu'il s'agisse de
-          mariages, cocktails, anniversaires, fêtes diverses, comités
-          d'entreprise... Nous vous invitions à nous contacter pour d'avantage
-          de renseignements, pour les détails propres à votre évènement car nous
-          partons du principe que chaque animation doit être adaptée à vos
-          souhaits. Nous ferons tout notre possible pour répondre à vos attentes
-          en matière d'animation certes, mais également en ce qui concerne notre
-          écoute, notre disponibilité, notre volonté de vous satisfaire. Vous
-          pourrez retrouver des images des nos préstations ci dessous. Bonne
-          visite et à très bientôt par mail ou par téléphone...
-        </p>
+        <h1 id="start">Présentation</h1>
         <div class="divided">
-          <img
-            src="./assets/acceuil/dj-mariage-eure-271.jpg"
-            alt="image de soiré musicale avec des personnes qui dansent"
-          />
-          <img
-            src="./assets/acceuil/animation-mariage-normandie2.jpg"
-            alt="image de soiré musicale avec des personnes qui dansent"
-          />
-          <img
-            src="./assets/acceuil/dj-normandie-eure3.jpg"
-            alt="image de soiré musicale avec des personnes qui dansent"
-          />
+          <div class="text-group">
+            <p>
+              Nous sommes professionnels de l'animation musicale et du
+              spectacle, disc-jockey & musiciens dont la vocation est avant tout
+              de vous donner le meilleur de nous même. La visite du site vous
+              donnera une idée assez précise de notre conception de l'animation,
+              qu'il s'agisse de mariages, cocktails, anniversaires, fêtes
+              diverses, comités d'entreprise... Nous vous invitions à nous
+              contacter pour d'avantage de renseignements, pour les détails
+              propres à votre évènement car nous partons du principe que chaque
+              animation doit être adaptée à vos souhaits. Nous ferons tout notre
+              possible pour répondre à vos attentes en matière d'animation
+              certes, mais également en ce qui concerne notre écoute, notre
+              disponibilité, notre volonté de vous satisfaire. Vous pourrez
+              retrouver des images des nos préstations ci dessous. Bonne visite
+              et à très bientôt par mail ou par téléphone...
+            </p>
+          </div>
+          <div class="slideshow">
+            <ul>
+              <li class="active">
+                <img
+                  src="./assets/accueil/dj-mariage-eure-271.jpg"
+                  alt="soirée musicale"
+                />
+              </li>
+              <li>
+                <img
+                  src="./assets/accueil/dj-normandie-eure3.jpg"
+                  alt="soirée mariage"
+                />
+              </li>
+              <li>
+                <img
+                  src="./assets/accueil/animation-mariage-normandie2.jpg"
+                  alt="soirée dansante"
+                />
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -263,5 +276,6 @@
     </footer>
 
     <script src="index.js"></script>
+    <script src="images.js"></script>
   </body>
 </html>

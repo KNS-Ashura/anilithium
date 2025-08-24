@@ -33,38 +33,38 @@
 @media screen and (max-width: 630px) {
   header div {
     flex-direction: column;
-    align-items: center;   /* tout centré */
+    align-items: center;   
     justify-content: center;
-    gap: 0.5em;           /* petit espace entre les éléments */
+    gap: 0.5em;           
   }
 
   header div a img {
     width: 7rem;
     height: 7rem;
     margin-bottom: 0.8em;
-    display: block;       /* prend toute la largeur disponible */
-    margin-left: auto;    /* centré */
-    margin-right: auto;   /* centré */
+    display: block;     
+    margin-left: auto;  
+    margin-right: auto;   
   }
 
   .link-block {
-    flex: unset;          /* supprime le "flex:1" qui cassait l’alignement */
-    margin: 0;            /* supprime toutes les marges parasites */
-    width: 100%;          /* prend toute la largeur dispo */
-    max-width: 250px;     /* mais limité pour garder un joli rendu */
-    text-align: center;   /* texte bien centré */
+    flex: unset;         
+    margin: 0;          
+    width: 100%;         
+    max-width: 250px;     
+    text-align: center;   
   }
 
   .link-block a {
-    display: block;       /* occupe toute la largeur */
+    display: block;     
     width: 100%;
-    margin: 0 auto;       /* centré dans son parent */
+    margin: 0 auto;     
   }
 
   .sous-texte {
     font-size: 0.9em;
     margin-top: 0.2em;
-    transform: none;      /* pas de décalage */
+    transform: none;     
   }
 }
 
@@ -72,7 +72,7 @@
 @media screen and (max-width: 500px) {
 
   body {
-    font-size: 14px; /* ajuste la taille globale si nécessaire */
+    font-size: 14px; 
   }
 
   .presentation-section h1 {
@@ -93,7 +93,7 @@
 
   .divided {
     flex-direction: column;
-    gap: 15px; /* espace entre texte et image */
+    gap: 15px; 
   }
 
   .image-block {
@@ -102,11 +102,11 @@
   }
 
   .image-block img {
-    max-width: 90%; /* réduit légèrement la taille des images */
+    max-width: 90%;
     height: auto;
   }
 
   .link-block {
-    margin-bottom: 10px; /* réduit les marges dans le header si nécessaire */
+    margin-bottom: 10px;
   }
 }

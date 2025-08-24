@@ -35,8 +35,9 @@ prevBtn.addEventListener("click", () => {
 
 function resetAutoSlide() {
   clearInterval(autoSlide);
-  autoSlide = setInterval(nextSlide, 5000);
+  autoSlide = setInterval(nextSlide, 15000);
 }
 
 // Init
 updateCarousel();
+
